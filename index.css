@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+.form{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "type name" "date amount";
+    padding: 2rem;
+    justify-items: end;
+    right: 15rem;
+}
+.form>div{
+    position: relative;
+    padding-top: 1.3rem;
+}
+input{
+    position: relative;
+    height: 1.5rem;
+    left: 1rem;
+    width: 20rem;
+}
+button{
+    position: relative;
+    right: 13rem;
+    padding: .7rem;
+}
+button:hover{
+    background-color: black;
+    opacity: .7;
+    border: none;
+    color: aliceblue;
+}
+table,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    padding: 0 5rem;
+    
+}
+table{
+    position: relative;
+    left: 18rem;
+    background-color: #333;
+    color: aliceblue;
+}
+td{
+    background-color: #334;
+}
+.type{
+    grid-area: type;
+}
+.name{
+    grid-area: name;
+}
+.date{
+    grid-area: date;
+}
+.amount{
+    grid-area: amount;
+}
